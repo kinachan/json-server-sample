@@ -1,0 +1,23 @@
+{
+  "name": "json-server-exp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx electron index.js",
+    "build-win": "npx electron-packager . --platform=win32 --arch=x64 --overwrite",
+    "build-mac": "npx electron-packager . --platform=darwin --arch=x64 --overwrite",
+    "build-all": "yarn run build-win && yarn run build-mac"
+  },
+  "dependencies": {
+    "electron": "^12.0.1",
+    "electron-log": "^4.3.2",
+    "electron-reload": "^1.5.0",
+    "json-server": "^0.16.3",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.2.0"
+  }
+}
